@@ -1,0 +1,84 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <!-- font -->
+       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+ <!-- CSS -->
+ <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+
+ {% block css %}{% endblock %}
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <!--navBar-->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img class="logo_nb" src="{% static 'img/logo_navBar.svg' %}"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/">Mi perfil</a></li>
+        <li><a href="/">Amigos</a></li>
+        <li><a href="/">Insignias</a></li>
+        <li><a href="/">Mapa</a></li>
+        <li><a href="/">Eventos</a></li>
+        <li><a href="/">Configuración</a></li>
+        <li><a href="/">Ayuda</a></li>
+        <li><a href="/">Cerrar sesión</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+<div >
+  <img class = "back-navBar" src="{% static 'img/back-navBar.jpg' %}">
+
+</div>
+
+          <div class="pic_navBar">
+            <img class="user_img circle" src="{% static 'img/1.jpg' %}">
+          </div>
+          <div class="txt_navBar">
+            <span>{{user}}</span>
+          </div>
+          <div class="txt2_navBar">
+            <span>{{user.cash}} ökos</span>
+          </div>
+
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/mi-perfil">Mi perfil</a></li>
+        <li><a href="/amigos">Amigos</a></li>
+        <li><a href="/insignias">Insignias</a></li>
+        <li><a href="/mapa">Mapa</a></li>
+        <li><a href="/eventos">Eventos</a></li>
+          <li><div class="divider"></div></li>
+        <li><a href="/configuracion">Configuración</a></li>
+        <li><a href="/preguntas">Preguntas frecuentes</a></li>
+        <li><a href="/logOut">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container">
+        {% block content %}
+{% endblock %}
+      </div>
+      {% block map%}
+      {% endblock %}
+
+
+
+  <!-- script's -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js
+"></script>
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+  {% block script %}{% endblock %}
+</body>
+</html>

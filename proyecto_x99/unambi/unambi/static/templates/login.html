@@ -1,0 +1,62 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+  <!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+  {% block css %}{% endblock %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="center">
+              <img class= "logo_intro center" src="{% static 'img/logo_intro.svg' %}">
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12">
+        <h5 class="gris fw-300 center">Ingresa tus datos.</h5>
+      </div>
+      <div class="col s12">
+        <form method = "POST">
+          {% csrf_token %}
+          <table>
+           {{login.as_table}}
+         </table>
+         <button type="submit" value="Submit" class="btn waves-effect col s12 btn_inicio">Ingresar</button>
+       </form>
+       
+        <a href="/registrar">
+          <h6 class="registrar col s12 center">
+          ¿Eres nuevo, registrate?
+          </h6>
+        </a>
+        
+
+      
+     </div>
+   </div>      
+ </div>
+
+
+
+
+
+ <!-- script's -->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+ <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+ {% block script %}{% endblock %}
+</body>
+</html>

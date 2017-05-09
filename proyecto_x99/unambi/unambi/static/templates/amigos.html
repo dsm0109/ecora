@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<style>
+body{
+	background-color:#F0F0F0;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+  <a id="agregar-amigo" class="btn-floating btn-large waves-effect waves-light btn_add hoverable"><i class="material-icons">add</i></a>
+
+
+<div class="row">
+	<div class="col s12">
+
+<div class="card ">
+			<div class="card-content">
+				<span class="card-title">Mis grupos</span>
+				<ul class="collection">
+
+					<li class="collection-item avatar">
+						<img src="{% static 'img/01.jpg' %}" class="circle">
+						<span class="fw-400">Facultad de Ciencias</span><br>
+						<span class="gris">- Enrique Torrens Laureles<br>- Pedro Pasquet Yáñez<br>- Jesús Diez<br>- Ana Celestina Alvaredo
+						</span>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="card ">
+
+
+			<div class="card-content">
+				<span class="card-title">Amigos</span>
+				<ul class="collection">
+
+					<li class="collection-item avatar">
+						<img src="{% static 'img/2.jpg' %}" class="circle">
+						<span class="fw-400">Magnolia Margarita Quezada</span>
+						<span class="gris aux1"><br>mag.97.palacios@gmail.com<br>
+							122 ökos
+						</span>
+					</li>
+					<li class="collection-item avatar">
+						<img src="{% static 'img/3.jpg' %}" class="circle">
+						<span class="fw-400">Brandon Tellez Sevilla</span>
+						<span class="gris aux1"><br>brandontellezsevilla@gmail.com<br>
+							10 ökos
+						</span>
+					</li>
+					<li class="collection-item avatar">
+						<img src="{% static 'img/4.jpg' %}" class="circle">
+						<span class="fw-400">Esteban Alonso Mora</span>
+						<span class="gris aux1"><br>esalramo@gmail.com<br>
+							202 ökos
+						</span>
+					</li>
+					<li class="collection-item avatar">
+						<img src="{% static 'img/5.jpg' %}" class="circle">
+						<span class="fw-400">Diego Sánchez Mendoza</span>
+						<span class="gris aux1"><br>dsm0109@gmail.com<br>
+							82 ökos
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+{% endblock%}

@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<style>
+body{
+	background-color:#F0F0F0;
+}
+
+#map {
+        height: 580px;
+        width: 100%;
+       }
+</style>
+{% endblock %}
+
+{% block map %}
+	<div id="map"></div>
+{% endblock%}
+
+{% block script %}
+
+<script>
+      function initMap() {
+        var posIni = {lat: 19.3320675, lng: -99.1309651};
+        var mk_1 = {lat: 19.391341, lng: -99.186748};
+        var mk_2 = {lat: 19.473405, lng: -99.213509};
+        var mk_3 = {lat: 19.396708, lng: -99.184477};
+        var mk_4 = {lat: 19.357991, lng: -99.149596};
+        var mk_5 = {lat: 19.378677, lng: -99.169891};
+        var mk_6 = {lat: 19.389857, lng: -99.158461};
+        var mk_7 = {lat: 19.344643, lng: -99.181976};
+        var mk_8 = {lat: 19.337842, lng: -99.119345};
+        var mk_9 = {lat: 19.370569, lng: -99.065253};
+        var mk_10 = {lat: 19.338263, lng: -99.122435};
+        var mk_11 = {lat: 19.392814, lng: -99.162572};
+        var mk_12 = {lat: 19.337463, lng: -99.120414};
+        var mk_13 = {lat: 19.418111, lng: -99.160449};
+        var mk_14 = {lat: 19.442500, lng: -99.146625};
+        var mk_15 = {lat: 19.417348, lng: -99.164182};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: posIni
+        });
+        var marker = new google.maps.Marker({
+          position: mk_1,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_2,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_3,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_4,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_5,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_6,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_7,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_8,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_9,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_10,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_11,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_12,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_13,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_14,
+          map: map
+        });
+
+        var marker = new google.maps.Marker({
+          position: mk_15,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD8nezqLUkl1trK3sD2k1OX3-wSQaRS3o&callback=initMap">
+    </script>
+{% endblock %}

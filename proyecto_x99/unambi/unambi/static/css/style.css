@@ -1,0 +1,280 @@
+/*
+Color principal:    #0cca4a
+Color negro:        #2d2d2d
+Color gris:         #9a9a9a
+*/
+
+
+/* Estilos generales */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+h5{
+    font-size: 1.1em;
+}
+
+/* Estilos auxiliares */
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.color-principal{
+    color:#0cca4a;
+}
+
+.gris{
+    color:#9a9a9a;
+}
+
+.aux1{
+    font-size: 0.9em;
+}
+
+.aux_2{
+    font-size: 2.5em;
+}
+
+/* Forms */
+
+label {
+    font-size: 1rem;
+    color: #2d2d2d;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #0cca4a;
+    box-shadow: 0 1px 0 0 #0cca4a;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #0cca4a;
+}
+
+/* Botones */
+
+.btn:hover, .btn-large:hover {
+    background-color: #fefefe;
+}
+
+.btn, .btn-large {
+    color: #0cca4a;
+    background-color: #fefefe;
+}
+
+.btn_add{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.btn, .btn-large {
+    background-color: #0cca4a;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #0cca4a;
+}
+
+/* Barra de navegacion */
+
+.back-navBar{
+    position: absolute;
+    height: 120px;
+    width: 100%;
+}
+
+.pic_navBar{
+    height: 120px;
+    background-color: #fff;
+}
+
+.user_img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top:25px;
+    left:20px;
+}
+
+.txt_navBar{
+    position: absolute;
+    top: 25px;
+    left: 105px;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.txt2_navBar{
+    position: absolute;
+    top: 45px;
+    left: 105px;
+    color: #000;
+}
+
+nav {
+    background-color: #fff;
+}
+
+nav a {
+    color: #2d2d2d;
+}
+
+.logo_nb{
+    width: 150px;
+    height: 150px;
+    margin-top: -45px;
+}
+
+/* Login */
+.logo_intro{
+    height: 220px;
+    width: 220px;
+}
+
+.btn_inicio{
+    color:#fff;
+}
+
+/* Registrar */
+
+.registrar{
+    padding-top: 50px;
+    font-size: 0.9em;
+    color:#9a9a9a;
+}
+
+/* Card */
+
+.card .card-title {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #0cca4a;
+}
+
+/* Seccion mi perfil */
+
+.img_miPerfil{
+    width: 150px;
+    height: 150px;
+}
+
+/* Estilos monedas */
+
+.minMon-1{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 200px;
+    right: 10px;
+}
+
+.minMon-2{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 150px;
+    right: 50px;
+}
+
+.minMon-3{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 300px;
+    right: 70px;
+}
+
+.minMon-4{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 100px;
+    left: 10px;
+}
+
+.minMon-5{
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    bottom: 180px;
+    left: 30px;
+}
+
+.minMon-6{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 210px;
+    right: 200px;
+}
+
+.minMon-7{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 110px;
+    left: 160px;
+}
+
+.minMon-8{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    left: 450px;
+}
+
+.minMon-9{
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    bottom: 200px;
+    right: 500px;
+}
+
+.minMon-10{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 200px;
+    left: 300px;
+}
+
+/* Estilos por ID */
+
+#moneda{
+    width: 270px;
+    height: 270px;
+    margin-top: -15px;
+
+}
+
+#malla{
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10,10,10,0.75);
+    z-index: 0;
+}
+
+#popUp{
+    top:18%;
+    position: fixed;
+    text-align: center;
+    color:#fff;
+
+}
